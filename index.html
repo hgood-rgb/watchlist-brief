@@ -182,94 +182,117 @@ const WATCHLIST = {
 };
 
 const BRIEF = {
-  mode: "sample",
-  asOf: "2026-10-16",
-  retrievedAt: "2026-10-16T16:30:00-04:00",
-  priceType: "close",
+  mode: "live",
+  asOf: "2026-10-28",
+  retrievedAt: "2026-10-28T11:31:00-04:00",
+  priceType: "intraday",
   companies: {
     NVDA: {
       closes: [
-        { date: "2026-10-12", close: 100.00 },
-        { date: "2026-10-13", close: 101.40 },
-        { date: "2026-10-14", close: 99.80 },
-        { date: "2026-10-15", close: 103.10 },
-        { date: "2026-10-16", close: 104.20 }
+        { date: "2026-10-21", close: 221.97 },
+        { date: "2026-10-22", close: 212.21 },
+        { date: "2026-10-23", close: 210.96 },
+        { date: "2026-10-26", close: 216.00 },
+        { date: "2026-10-27", close: 217.94 }
       ],
-      latest: null,
-      priceSource: "https://example.com/sample",
+      latest: { date: "2026-10-28", time: "11:31 AM", price: 217.51 },
+      priceSource: "https://stockanalysis.com/stocks/nvda/history/",
       news: [
-        { date: "2026-10-15", headline: "Sample headline. Run the refresh-brief agent to replace this.", source: "Sample", url: "https://example.com/sample", why: "Sample. The agent writes one plain sentence here on why the item matters to the stock." }
+        { date: "2026-10-27", headline: "Nvidia to invest $3B in Meta's planned equity offering", source: "Stock Analysis", url: "https://stockanalysis.com/news/nvidia-3-billion-meta-offering/", why: "Nvidia is putting $3 billion into Meta's stock sale, and Meta plans to expand its use of Nvidia hardware in return." },
+        { date: "2026-10-27", headline: "Nvidia, Oracle expand NVIDIA Vera Rubin to multi-gigawatt scale", source: "TheFly (via TipRanks)", url: "https://www.tipranks.com/news/the-fly/nvidia-oracle-expand-nvidia-vera-rubin-to-multi-gigawatt-scale-thefly-news", why: "Oracle plans to scale its Vera Rubin clusters to multi-gigawatt capacity, a sign of continued data center demand for Nvidia systems." },
+        { date: "2026-10-26", headline: "NVDA Stock Slips to $210.96, Lowest Close in 20 Sessions, on AI Financing Fears", source: "FX Leaders", url: "https://www.fxleaders.com/news/2026/10/26/nvda-stock-slips-to-210-96-lowest-close-in-20-sessions-on-ai-financing-fears/", why: "Explains last Thursday and Friday's drop: worries about how AI build-outs get financed, higher bond yields, and an expected dip in gross margin." }
       ],
-      upcoming: [
-        { date: "2026-10-28", event: "Sample event (replace by refreshing)", source: "Sample", url: "https://example.com/sample" }
-      ]
+      upcoming: []
     },
     JPM: {
       closes: [
-        { date: "2026-10-12", close: 100.00 },
-        { date: "2026-10-13", close: 99.30 },
-        { date: "2026-10-14", close: 98.90 },
-        { date: "2026-10-15", close: 98.20 },
-        { date: "2026-10-16", close: 97.60 }
+        { date: "2026-10-21", close: 335.19 },
+        { date: "2026-10-22", close: 336.54 },
+        { date: "2026-10-23", close: 331.58 },
+        { date: "2026-10-26", close: 334.04 },
+        { date: "2026-10-27", close: 335.79 }
       ],
-      latest: null,
-      priceSource: "https://example.com/sample",
+      latest: { date: "2026-10-28", time: "11:31 AM", price: 338.54 },
+      priceSource: "https://stockanalysis.com/stocks/jpm/history/",
       news: [
-        { date: "2026-10-14", headline: "Sample headline. Run the refresh-brief agent to replace this.", source: "Sample", url: "https://example.com/sample", why: "Sample." }
+        { date: "2026-10-22", headline: "J.P. Morgan Asset Management Expands Access to Its Tokenized Money Market Funds on Solana", source: "PR Newswire (company release)", url: "https://www.prnewswire.com/news-releases/jp-morgan-asset-management-expands-access-to-its-tokenized-money-market-funds-on-solana-302917188.html", why: "A small step in the bank's push into blockchain products, including a fund built for stablecoin issuers; not a major earnings driver." }
       ],
-      upcoming: []
+      upcoming: [
+        { date: "2026-10-28", event: "FOMC rate decision at the end of the Oct 27 to 28 meeting (market-wide item, matters for bank rates)", source: "Federal Reserve", url: "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm" },
+        { date: "2026-10-31", event: "Quarterly dividend of $1.65 per share payable (record date Oct 6)", source: "JPMorganChase Investor Relations", url: "https://www.jpmorganchase.com/ir/news/2026/jpmc-declares-increased-common-stock-dividend-9-15" }
+      ]
     },
     ACN: {
       closes: [
-        { date: "2026-10-12", close: 100.00 },
-        { date: "2026-10-13", close: 100.20 },
-        { date: "2026-10-14", close: 99.90 },
-        { date: "2026-10-15", close: 100.10 },
-        { date: "2026-10-16", close: 100.05 }
+        { date: "2026-10-21", close: 240.26 },
+        { date: "2026-10-22", close: 258.74 },
+        { date: "2026-10-23", close: 249.37 },
+        { date: "2026-10-26", close: 247.23 },
+        { date: "2026-10-27", close: 235.16 }
       ],
-      latest: null,
-      priceSource: "https://example.com/sample",
-      news: [],
-      upcoming: [
-        { date: "2026-10-22", event: "Sample event (replace by refreshing)", source: "Sample", url: "https://example.com/sample" }
-      ]
-    },
-    DE: {
-      closes: [
-        { date: "2026-10-12", close: 100.00 },
-        { date: "2026-10-13", close: 102.50 },
-        { date: "2026-10-14", close: 101.80 },
-        { date: "2026-10-15", close: 103.90 },
-        { date: "2026-10-16", close: 102.70 }
-      ],
-      latest: null,
-      priceSource: "https://example.com/sample",
+      latest: { date: "2026-10-28", time: "11:29 AM", price: 245.26 },
+      priceSource: "https://stockanalysis.com/stocks/acn/history/",
       news: [
-        { date: "2026-10-13", headline: "Sample headline. Run the refresh-brief agent to replace this.", source: "Sample", url: "https://example.com/sample", why: "Sample." }
+        { date: "2026-10-27", headline: "Accenture awarded $151.46M Air Force task order", source: "TheFly (via TipRanks)", url: "https://www.tipranks.com/news/the-fly/accenture-awarded-151-46m-air-force-task-order-thefly-news", why: "A federal contract win worth up to $228 million through 2030; useful but small next to Accenture's total revenue." },
+        { date: "2026-10-26", headline: "Accenture price target raised to $252 from $210 at Wells Fargo", source: "TheFly (via TipRanks)", url: "https://www.tipranks.com/news/the-fly/accenture-price-target-raised-to-252-from-210-at-wells-fargo-thefly-news", why: "Wells Fargo stays at Equal Weight, saying AI should help Accenture over time but the gains may be slow to show up." }
       ],
       upcoming: []
     },
-    LLY: {
+    MZTI: {
       closes: [
-        { date: "2026-10-12", close: 100.00 },
-        { date: "2026-10-13", close: 98.70 },
-        { date: "2026-10-14", close: 99.60 },
-        { date: "2026-10-15", close: 101.30 },
-        { date: "2026-10-16", close: 102.90 }
+        { date: "2026-10-21", close: 105.33 },
+        { date: "2026-10-22", close: 112.33 },
+        { date: "2026-10-23", close: 109.13 },
+        { date: "2026-10-26", close: 109.03 },
+        { date: "2026-10-27", close: 107.81 }
       ],
-      latest: null,
-      priceSource: "https://example.com/sample",
+      latest: { date: "2026-10-28", time: "11:27 AM", price: 107.38 },
+      priceSource: "https://stockanalysis.com/stocks/mzti/history/",
       news: [
-        { date: "2026-10-16", headline: "Sample headline. Run the refresh-brief agent to replace this.", source: "Sample", url: "https://example.com/sample", why: "Sample." }
+        { date: "2026-10-28", headline: "Marzetti price target lowered to $135 from $140 at Stephens", source: "TheFly (via TipRanks)", url: "https://www.tipranks.com/news/the-fly/marzetti-price-target-lowered-to-135-from-140-at-stephens-thefly-news", why: "Stephens expects a muted fiscal first quarter because a Cyclospora outbreak hurt sales, ahead of the Nov 3 report." }
       ],
       upcoming: [
-        { date: "2026-10-30", event: "Sample event (replace by refreshing)", source: "Sample", url: "https://example.com/sample" }
+        { date: "2026-11-03", event: "Q1 fiscal 2027 results before the open; conference call 10:00 AM ET", source: "Company release via Finviz", url: "https://finviz.com/news/404776/the-marzetti-company-to-webcast-first-quarter-fiscal-year-2027-conference-call" }
+      ]
+    },
+    LLY: {
+      closes: [
+        { date: "2026-10-21", close: 1270.75 },
+        { date: "2026-10-22", close: 1306.69 },
+        { date: "2026-10-23", close: 1273.46 },
+        { date: "2026-10-26", close: 1279.14 },
+        { date: "2026-10-27", close: 1281.91 }
+      ],
+      latest: { date: "2026-10-28", time: "11:31 AM", price: 1298.40 },
+      priceSource: "https://stockanalysis.com/stocks/lly/history/",
+      news: [
+        { date: "2026-10-28", headline: "Lilly's retatrutide delivered greater A1C reduction and more than double the weight loss of Ozempic's highest approved dose in head-to-head trial", source: "PR Newswire (company release)", url: "https://www.prnewswire.com/news-releases/lillys-retatrutide-delivered-greater-a1c-reduction-and-more-than-double-the-weight-loss-of-ozempics-highest-approved-dose-in-head-to-head-trial-302921328.html", why: "Phase 3 data showing Lilly's next obesity and diabetes drug beat Novo's Ozempic, though more patients stopped because of side effects." },
+        { date: "2026-10-27", headline: "Eli Lilly names Ilya Yuffa as president, Lilly Global Markets", source: "TheFly (via TipRanks)", url: "https://www.tipranks.com/news/the-fly/eli-lilly-names-ilya-yuffa-as-president-lilly-global-markets-thefly-news", why: "International chief Patrik Jonsson retires at year end and U.S. and international operations merge into one unit in 2027." },
+        { date: "2026-10-26", headline: "Lilly declares fourth-quarter 2026 dividend", source: "PR Newswire (company release)", url: "https://www.prnewswire.com/news-releases/lilly-declares-fourth-quarter-2026-dividend-302919496.html", why: "Dividend of $1.73 per share, record date Nov 13 and payable Dec 10." }
+      ],
+      upcoming: [
+        { date: "2026-10-29", event: "Q3 2026 results; conference call 10:00 AM ET", source: "Company release via Finviz", url: "https://finviz.com/news/403165/lilly-confirms-date-and-conference-call-for-third-quarter-2026-financial-results-announcement" }
       ]
     }
   }
 };
 
 const CHANGELOG = [
+  {
+    date: "2026-10-28",
+    summary: [
+      "First live refresh. Five closes Oct 21 to Oct 27, plus an intraday price from Oct 28 around 11:30 AM ET (market open).",
+      "NVDA 221.97 to 217.51 (intraday): fell to a 20-session low on Oct 23 on AI financing worries, then partly recovered; $3B Meta investment announced Oct 27.",
+      "JPM 335.19 to 338.54 (intraday): no major news; only item found was tokenized money market funds on Solana (Oct 22).",
+      "ACN 240.26 to 245.26 (intraday): swung from 258.74 (Oct 22) down to 235.16 (Oct 27); news was a $151.46M Air Force task order and a Wells Fargo price target raise. No confirmed cause found for the swings.",
+      "MZTI 105.33 to 107.38 (intraday): Stephens cut its price target to $135, expecting a muted Q1 from the Cyclospora outbreak.",
+      "LLY 1,270.75 to 1,298.40 (intraday): retatrutide beat Ozempic in a head-to-head Phase 3 trial, the day before Q3 earnings.",
+      "Calendar added: FOMC decision Oct 28, JPM dividend payable Oct 31, LLY Q3 results Oct 29, MZTI Q1 FY27 results Nov 3.",
+      "Missing: no NVDA or ACN events found in the next two weeks (NVDA earnings Nov 17 and ACN earnings Dec 17 fall outside the window). JPM has only one news item in the window; MZTI has only one; ACN has two.",
+      "Sample ticker DE removed from BRIEF; MZTI added to match WATCHLIST."
+    ],
+    note: "All prices come from one source (stockanalysis.com) and were not cross-checked against a second source. Oct 28 prices are intraday, not closes. retrievedAt is the time on the quotes (about 11:31 AM ET), not an exact clock time. Several news items come through TheFly/TipRanks or FX Leaders summaries; Reuters, Barron's, CNBC, Business Insider and Business Wire pages could not be opened. A Barron's report of an Accenture CEO share purchase (Oct 28) was seen in a headline list but not opened, so it is not included. JPM's Oct 31 dividend payable date falls on a Saturday as stated by the company."
+  },
   {
     date: "2026-10-16",
     summary: [
